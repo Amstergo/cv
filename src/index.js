@@ -1,3 +1,4 @@
+var template = require("./views/index.pug");
 import "./css/style.css";
 
 function component() {
