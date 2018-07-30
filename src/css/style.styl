@@ -1,5 +1,112 @@
  @import "reset.css"
  @import "./fonts.css";
 
-.hello
-	height: 50px
+body
+	font-family: 'pt-sans'
+	max-width: 1920px
+	margin: 0 auto
+
+.container
+	margin-top: 116px
+	padding: 0 75px
+	display: flex
+	justify-content: space-between
+
+.left
+	flex-grow: 0.65
+
+.right
+	flex-grow: 0.18
+
+.profile
+	padding-top: 43px
+
+	& > span
+		display: block
+		text-align: center
+		text-transform: uppercase
+
+	&__img
+		width: 315px
+		height: 315px
+		background-color: #006CB4
+		border-radius: 50%
+		box-shadow: 0 0 0px 20px white, 0 0 0 21px #006CB4
+		margin: 0 auto
+
+	&__name
+		font-size: 520%
+		margin-top: 65px
+
+	&__surname, &__post
+		font-weight: bold
+
+	&__surname
+		font-size: 550%
+		letter-spacing: 8px
+
+	&__post
+		font-size: 225%
+		line-height: 2
+		letter-spacing: 1px
+
+.block__title
+	text-transform: uppercase
+	font-size: 380%
+	font-weight: bold
+	letter-spacing: 3px
+	display: flex
+	align-items: center
+	color: #006CB4
+
+	&:after
+		content: ''
+		width: 100%
+		height: 8px
+		background-color: #006CB4
+		margin-left: 15px
+
+	&-name
+		margin-left: 28px
+
+.block__content
+	margin-top: 42px
+	position: relative
+
+	&:after
+		content: ''
+		width: 30px
+		height: 30px
+		background: black
+		border-radius: 50%
+		position: absolute
+		left: 17px
+		top: 7px
+
+	&-title
+		text-transform: uppercase
+		font-size: 250%
+		font-weight: bold
+		color: #006CB4
+		padding-left: 77px
+
+		& span
+			text-transform: capitalize
+			font-weight: normal
+			margin-left: 17px
+			font-size: 95%
+			color: black
+
+	&-name
+		display: block
+		font-size: 232%
+		text-transform: uppercase
+		margin-top: 13px
+		padding-left: 77px
+
+	&-desc
+		font-size: 150%
+		max-width: 900px
+		margin-top: 17px
+		line-height: 1.2
+		//padding-left: 77px
