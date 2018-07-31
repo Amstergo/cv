@@ -13,10 +13,10 @@ body
 	justify-content: space-between
 
 .left
-	flex-grow: 0.65
+	width: 40%
 
 .right
-	flex-grow: 0.18
+	width: 55.5%
 
 .profile
 	padding-top: 43px
@@ -70,8 +70,9 @@ body
 		margin-left: 28px
 
 .block__content
-	margin-top: 42px
+	margin-top: 21px
 	position: relative
+	padding-left: 77px
 
 	&:after
 		content: ''
@@ -88,7 +89,6 @@ body
 		font-size: 250%
 		font-weight: bold
 		color: #006CB4
-		padding-left: 77px
 
 		& span
 			text-transform: capitalize
@@ -102,11 +102,56 @@ body
 		font-size: 232%
 		text-transform: uppercase
 		margin-top: 13px
-		padding-left: 77px
 
 	&-desc
 		font-size: 150%
 		max-width: 900px
 		margin-top: 17px
 		line-height: 1.2
-		//padding-left: 77px
+
+.block .block__content:nth-Child(2)
+	margin-top: 42px
+
+.left__profile
+	margin-top: 103px
+
+.left__contact
+	margin-top: 76px
+
+.left__title
+	width: 94%
+
+	&:after
+		margin-left: 8px
+
+	&-icon
+	  margin-left: 20px
+
+  &-name
+	  margin-left: 15px
+
+.left__desc
+	font-size: 150%
+	margin-top: 20px
+	padding: 0 20px
+	line-height: 1.2
+
+	& span
+		font-weight: bold
+
+// left__contact
+
+.contact__container
+	display: flex
+	margin-top: 26px
+	line-height: 2.6
+	font-size: 200%
+
+	&-name
+		color: #006CB4
+		text-transform: uppercase
+		margin-left: 19px
+		font-weight: bold
+
+	&-data
+	  margin-left: 68px

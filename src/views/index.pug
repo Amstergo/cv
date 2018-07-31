@@ -6,23 +6,50 @@ div.container
 			span.profile__name name here
 			span.profile__surname surname 
 			span.profile__post graphic designer
+		div.block
+			div.block__title.left__title.left__profile
+				img(src=require("../icons/EDUCATION.svg")).block__title-icon.left__title-icon
+				span.block__title-name.left__title-name profile
+			p.left__desc.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus 
+				lacinia iaculis diam. Suspendisse pulvinar suscipit quam, dictum hendrerit
+				mauris interdum quis. Ut metus ligula, luctus quis dolor sed, maximus
+				pulvinar arcu. Mauris felis mauris, imperdiet nec interdum vel,
+				fermentum at urna. Aliquam porta ornare mauris, quis fermentum augue
+				semper hendrerit. Duis in commodo nisl. Proin id tempor lectus.
+				Donec imperdiet eros sit amet velit suscipit pharetra.
+				#[span Curabitur dignissim, erat in aliquet iaculis, urna orci commodo libero, id rhoncus justo dolor eget ligula. Maecenas eu facilisis magna. Sed dictum tellus a dolor tincidunt tempor. Nulla condimentum condimentum rhoncus. Integer ut justo nunc. Ut nec massa lorem. Integer ut justo nunc. Ut nec massa lorem.]
+				
+		div.block
+			div.block__title.left__title.left__contact
+				img(src=require("../icons/EDUCATION.svg")).block__title-icon.left__title-icon
+				span.block__title-name.left__title-name contact
+			div.contact__container
+				- var contactName = ['address', 'e-mail', 'phone', 'website']
+				ul.contact__container-name
+					each item in contactName
+						li= item
+				- var contactData = ['Main Street, City.', 'contact@domain.com', '555-555-555', 'www.yourweb.com']
+				ul.contact__container-data
+					each item in contactData
+						li= item
 	
 	div.right
 		div.block
 			div.block__title
 				img(src=require("../icons/EDUCATION.svg")).block__title-icon
 				span.block__title-name education
-		  
-			div.block__content
-				span.block__content-title master degree 
-					span // feb 2011 - jun 2014
-				span.block__content-name university name
-				p.block__content-desc.
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua.
-					Cras semper auctor neque vitae tempus quam pellentesque nec nam.
-					Enim nunc faucibus a pellentesque sit amet porttitor.
+			- for (var x = 0; x < 4; x++)
+				div.block__content
+					span.block__content-title master degree 
+						span // feb 2011 - jun 2014
+					span.block__content-name university name
+					p.block__content-desc.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Cras semper auctor neque vitae tempus quam pellentesque nec nam.
+						Enim nunc faucibus a pellentesque sit amet porttitor.
+						
+						
+				 	
 					
-					
-			 	
-				
