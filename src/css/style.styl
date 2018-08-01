@@ -18,7 +18,7 @@ body
 	margin-right: 75px
 
 .right
-	width: 975px
+	flex: 1.4
 
 .profile
 	padding-top: 43px
@@ -200,15 +200,18 @@ body
 	margin-top: 80px
 
 	&-content
-		margin: 40px 0 0 5px
+		margin: 40px 0 0 10px
 		font-size: 250%
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
 
 		&-elem
-			min-width: 430px
+			flex: 1 1 40%
 			margin-bottom: 38px
+
+			&:nth-child(odd)
+				margin-right: 50px
 
 			& h1
 			  text-transform: uppercase
@@ -229,3 +232,19 @@ body
 					position: absolute
 					left: 0
 					top: 0
+
+//@media query
+
+@media (max-width: 1297px)
+	.left
+		flex: 1 1 100%
+		margin-right: 0
+
+		&__title
+			width: 100%
+
+			&-icon
+			  margin-left: 0
+
+	.block__education
+		margin-top: 80px
