@@ -1,0 +1,12 @@
+div.block__title.left__title.left__contact
+	img(src=require("../../icons/Phone.svg")).block__title-icon.left__title-icon
+	span.block__title-name.left__title-name contact
+div.contact__container
+	- var contactName = ['address', 'e-mail', 'phone', 'website']
+	ul.contact__container-name
+		each item in contactName
+			li= item
+	- var contactData = ['Main Street, City.', 'contact@domain.com', '555-555-555', 'www.yourweb.com']
+	ul.contact__container-data
+		each item in contactData
+			li= item

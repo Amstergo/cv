@@ -1,0 +1,35 @@
+div.block__title.left__title.left__skills
+	img(src=require("../../icons/SKILLS.svg")).block__title-icon.left__title-icon
+	span.block__title-name.left__title-name Skills
+div.skills__container
+	h1.skills__container-name creative
+	div.skills__container-circle
+		- for(i = 0; i < 12; i++)
+			if i < 9
+				span
+			else
+				span.skills__container-circle_color
+div.skills__container
+	h1.skills__container-name teamwork
+	div.skills__container-circle
+		- for(i = 0; i < 12; i++)
+			if i < 11
+				span
+			else
+				span.skills__container-circle_color
+div.skills__container
+	h1.skills__container-name innovate
+	div.skills__container-circle
+		- for(i = 0; i < 12; i++)
+			if i < 6
+				span
+			else
+				span.skills__container-circle_color
+div.skills__container
+	h1.skills__container-name communication
+	div.skills__container-circle
+		- for(i = 0; i < 12; i++)
+			if i < 11
+				span
+			else
+				span.skills__container-circle_color
